@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEDRINX - RGB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            animation: rgb-animation 3s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            animation: rgb-animation-reverse 3s linear infinite;
+        }
+
+        @keyframes rgb-animation {
+            0% { color: #ff0000; text-shadow: 0 0 40px #ff0000; }
+            16% { color: #ff7f00; text-shadow: 0 0 40px #ff7f00; }
+            33% { color: #ffff00; text-shadow: 0 0 40px #ffff00; }
+            50% { color: #00ff00; text-shadow: 0 0 40px #00ff00; }
+            66% { color: #0000ff; text-shadow: 0 0 40px #0000ff; }
+            83% { color: #9400d3; text-shadow: 0 0 40px #9400d3; }
+            100% { color: #ff0000; text-shadow: 0 0 40px #ff0000; }
+        }
+
+        @keyframes rgb-animation-reverse {
+            0% { color: #9400d3; text-shadow: 0 0 30px #9400d3; }
+            16% { color: #0000ff; text-shadow: 0 0 30px #0000ff; }
+            33% { color: #00ff00; text-shadow: 0 0 30px #00ff00; }
+            50% { color: #ffff00; text-shadow: 0 0 30px #ffff00; }
+            66% { color: #ff7f00; text-shadow: 0 0 30px #ff7f00; }
+            83% { color: #ff0000; text-shadow: 0 0 30px #ff0000; }
+            100% { color: #9400d3; text-shadow: 0 0 30px #9400d3; }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 4rem; }
+            h2 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PEDRINX</h1>
+        <h2>FIOT DO SHEIK</h2>
+    </div>
+</body>
+</html>
